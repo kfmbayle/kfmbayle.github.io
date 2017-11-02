@@ -1,0 +1,386 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #DADBCD;
+}
+#wrapper{
+	width:90%;
+	margin: 0 auto;
+}
+#adbox{
+	width:300px;
+	height:250px;
+	overflow: hidden;
+	border: 1px solid #000;
+	margin:150px auto;
+	position: relative;
+	background: -webkit-linear-gradient(110deg, rgb(250, 198, 160), rgb(201, 85, 44));
+  background: linear-gradient(110deg, rgb(250, 198, 160), rgb(201, 85, 44));
+}
+
+/*----bottle----*/
+
+#bottle{
+	width: 300px;
+	height:250px;
+	background-image: url("PNGFiles/PSLBottle.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+	animation-name: bottle;
+    animation-duration: 1.5s;
+		animation-delay: 5.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+		opacity: 0;
+}
+@keyframes bottle{
+	0%{
+		left:-200px;
+		opacity:0;
+	}
+	100%{
+		left:4px;
+		opacity:1;
+		}
+}
+
+/*----pumpkin----*/
+
+#pumpkin{
+	width:375px;
+	height:250px;
+	background-image: url("PNGFiles/pumpkin.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	bottom: -90px;
+	z-index: 3;
+	opacity: 0;
+	animation-name:pumpkin;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes pumpkin{
+	0%{
+		left:-350px;
+		opacity:0;
+		transform: rotate(45deg);
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		left:120px;
+		opacity:1;
+		transform: rotate(360deg);
+		}
+}
+
+/*----donuts----*/
+
+#donut1{
+	width:400px;
+	height:250px;
+	background-image: url("PNGFiles/donut1.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:donut1;
+    animation-duration: 1.5s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+		opacity: 0;
+}
+@keyframes donut1{
+	0%{
+		top:-350px;
+		left: 113px;
+		opacity:0;
+		transform:rotate(-5deg);
+	}
+	40%{
+		opacity: 1;
+		transform:rotate(15deg);
+	}
+	100%{
+		top:23px;
+		left: 113px;
+		opacity:1;
+		}
+}
+
+#donut2{
+	width:400px;
+	height:250px;
+	background-image: url("PNGFiles/donut2.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:donut2;
+    animation-duration: 1.2s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes donut2{
+	0%{
+		top:-350px;
+		left: 76px;
+		opacity:0;
+	}
+	30%{
+		opacity: 1;
+		transform:rotate(15deg);
+	}
+	70%{
+		opacity:1;
+		transform:rotate(-10deg);
+		}
+	100%{
+		top:13px;
+		left: 76px;
+		opacity:1;
+		transform:rotate(0deg);
+			}
+}
+
+#donut3{
+	width:400px;
+	height:250px;
+	background-image: url("PNGFiles/donut3.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:donut3;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes donut3{
+	0%{
+		top:-350px;
+		left: 76px;
+		opacity:0;
+	}
+	30%{
+		opacity: 1;
+		transform:rotate(-15deg);
+	}
+	90%{
+		opacity:1;
+		transform:rotate(17deg);
+		}
+	100%{
+		top:13px;
+		left: 76px;
+		opacity:1;
+		transform:rotate(9deg);
+			}
+}
+
+/*----Cinammon----*/
+
+#cinnamon1{
+	width:300px;
+	height:250px;
+	background-image: url("PNGFiles/cinnamon1.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:cinnamon1;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes cinnamon1{
+	0%{
+		top:-350px;
+		left: 20px;
+		opacity:0;
+	}
+	270%{
+		opacity: 1;
+		transform:rotate(-9deg);
+	}
+	65%{
+		opacity:1;
+		transform:rotate(17deg);
+		}
+	100%{
+		top:40px;
+		left: 20px;
+		opacity:1;
+		transform:rotate(0deg);
+			}
+}
+
+#cinnamon2{
+	width:300px;
+	height:250px;
+	background-image: url("PNGFiles/cinnamon2.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:cinnamon2;
+    animation-duration: 1s;
+    animation-delay:.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes cinnamon2{
+	0%{
+		top:-350px;
+		left: 20px;
+		opacity:0;
+	}
+	30%{
+		opacity: 1;
+		transform:rotate(10deg);
+	}
+	50%{
+		opacity:1;
+		transform:rotate(-14deg);
+		}
+	100%{
+		top:40px;
+		left: 20px;
+		opacity:1;
+		transform:rotate(0deg);
+			}
+}
+
+#cinnamon3{
+	width:300px;
+	height:250px;
+	background-image: url("PNGFiles/cinnamon3.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	animation-name:cinnamon3;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes cinnamon3{
+	0%{
+		top:-350px;
+		left: 20px;
+		opacity:0;
+	}
+	30%{
+		opacity: 1;
+		transform:rotate(-9deg);
+	}
+	50%{
+		opacity:1;
+		transform:rotate(17deg);
+		}
+	100%{
+		top:40px;
+		left: 20px;
+		opacity:1;
+		transform:rotate(0deg);
+			}
+}
+
+/*----TYPE----*/
+
+h1{
+	font-size: 1em;
+	font-family: sans-serif;
+	color:#f9ddc9;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top:30px;
+	line-height: 150%;
+	animation-name:h_one;
+    animation-duration: 2s;
+    animation-delay:3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_one{
+	0%{
+		left:-200px;
+	}
+	100%{
+		left:23px;
+		opacity: 1;
+	}
+}
+
+h2{
+	font-size: .8em;
+	font-family: sans-serif;
+	color:#f9ddc9;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top:95px;
+	animation-name:h_two;
+    animation-duration: 2s;
+    animation-delay:5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_two{
+	0%{
+		left:-200px;
+	}
+	100%{
+		left:23px;
+		opacity: 1;
+	}
+}
+
+h3{
+	font-size: 1.3em;
+	font-family: sans-serif;
+	color:#fff;
+	z-index: 4;
+	opacity: 0;
+	position: absolute;
+	top: 110px;
+	line-height: 170%;
+	animation-name:h_three;
+    animation-duration: 2s;
+    animation-delay:5.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_three{
+	0%{
+		left:-200px;
+	}
+	100%{
+		left:23px;
+		opacity: 1;
+	}
+}
